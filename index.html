@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CalcSpace is a clean, easy-to-use calculator for everyday maths.">
+  <title>CalcSpace — Online Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="CalcSpace home"><span class="brand-mark">C</span> CalcSpace</a>
+    <span class="header-note">A simple space for numbers</span>
+  </header>
+
+  <main class="layout">
+    <section class="intro">
+      <p class="eyebrow">EVERYDAY MATH, MADE SIMPLE</p>
+      <h1>Your numbers.<br><span>Your way.</span></h1>
+      <p class="intro-copy">A clean, distraction-free calculator for quick calculations, wherever you are.</p>
+      <div class="feature-row">
+        <span><i></i> Fast & simple</span>
+        <span><i></i> Works offline</span>
+        <span><i></i> Mobile friendly</span>
+      </div>
+    </section>
+
+    <section class="calculator-card" aria-label="Calculator">
+      <div class="calc-top">
+        <div>
+          <p class="calc-label">STANDARD CALCULATOR</p>
+          <p class="calc-subtitle">Ready when you are</p>
+        </div>
+        <div class="status-dot" title="Ready"></div>
+      </div>
+
+      <div class="screen">
+        <div class="expression" id="expression" aria-live="polite"></div>
+        <output class="result" id="display" aria-live="polite">0</output>
+      </div>
+
+      <div class="keypad" id="keypad">
+        <button class="key key-muted" data-action="clear">AC</button>
+        <button class="key key-muted" data-action="sign" aria-label="Change sign">+/−</button>
+        <button class="key key-muted" data-action="percent">%</button>
+        <button class="key key-operator" data-operator="÷" aria-label="Divide">÷</button>
+
+        <button class="key" data-number="7">7</button>
+        <button class="key" data-number="8">8</button>
+        <button class="key" data-number="9">9</button>
+        <button class="key key-operator" data-operator="×" aria-label="Multiply">×</button>
+
+        <button class="key" data-number="4">4</button>
+        <button class="key" data-number="5">5</button>
+        <button class="key" data-number="6">6</button>
+        <button class="key key-operator" data-operator="−" aria-label="Subtract">−</button>
+
+        <button class="key" data-number="1">1</button>
+        <button class="key" data-number="2">2</button>
+        <button class="key" data-number="3">3</button>
+        <button class="key key-operator" data-operator="+" aria-label="Add">+</button>
+
+        <button class="key key-zero" data-number="0">0</button>
+        <button class="key" data-action="decimal">.</button>
+        <button class="key key-equals" data-action="equals" aria-label="Equals">=</button>
+      </div>
+      <div class="calc-footer"><span>⌨ Keyboard supported</span><button id="history-toggle" class="text-button" type="button">Clear history</button></div>
+      <div class="history" id="history" aria-label="Recent calculations"><p class="history-empty">Your recent calculations will appear here.</p></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span id="year"></span> CalcSpace</span>
+    <span>Made for everyday calculations.</span>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
