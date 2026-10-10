@@ -26,3 +26,7 @@ A simple, modern, and responsive calculator website built using HTML, CSS, and J
 ## Purpose
 
 This project was created to practise web development and learn the fundamentals of HTML, CSS, and JavaScript.
+
+# website link
+
+ https://sudhanparameshwaran.github.io/calculator---website/
